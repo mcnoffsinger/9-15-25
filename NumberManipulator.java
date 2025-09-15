@@ -21,7 +21,7 @@ public class NumberManipulator {
         // Print the integer that is closest to the number (ties go to even)
         System.out.println(
             "rounded to nearest number with ties going to the nearest even number (why?): "
-            + (Math.rint(input))
+            + (Math.rint(input))//.5 goes to nearest even number
             );
         // Print the integer closest to the number (standard rounding)
         System.out.println("Rounded like a typical fifth grader would: " 

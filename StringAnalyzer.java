@@ -24,7 +24,7 @@ public class StringAnalyzer {
         System.out.println("The first character of your sentence was " + input.charAt(0) + "\n");
         System.out.println("The last character of your message was " + input.charAt(input.length()-1) + "\n");
         // Print the sentence with whitespace removed from both ends
-        System.out.println("Whitespace removed: \""+ input.trim() + "\"\n" );
+        System.out.println("Whitespace removed: \""+ input.trim() + "\"\n" );//removes whitespace
         // Print the sentence in all uppercase
         System.out.println("Remember ALL CAPS when you spell the name yo: \"" + input.toUpperCase() + "\"\n");
         // Print the sentence in all lowercase
@@ -32,7 +32,7 @@ public class StringAnalyzer {
 
 
         // Prompt the user to enter a single character
-        char newInput = (getInput("enter one character: ").trim().charAt(0));
+        char newInput = (getInput("enter one character: ").trim().charAt(0));//removing whotespace then getting the first character
         // Determine if it is a letter, digit, or neither
         if(Character.isLetter(newInput)){
             // If it's a letter, check if it's uppercase or lowercase
